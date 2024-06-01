@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Calculator">
+   <children>
+      <TextField fx:id="text" layoutX="40.0" layoutY="49.0" onAction="#updateText" prefHeight="17.0" prefWidth="140.0" promptText="text" />
+      <Button fx:id="btnOne" layoutX="43.0" layoutY="121.0" mnemonicParsing="false" onAction="#calculate" prefHeight="61.0" prefWidth="30.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="56.0" fitWidth="41.0">
+               <image>
+                  <Image url="@one.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnFour" layoutX="43.0" layoutY="193.0" mnemonicParsing="false" onAction="#calculate" prefHeight="49.0" prefWidth="70.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="42.0">
+               <image>
+                  <Image url="@four.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnSeven" layoutX="42.0" layoutY="264.0" mnemonicParsing="false" onAction="#calculate" prefHeight="47.0" prefWidth="72.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="44.0">
+               <image>
+                  <Image url="@seven.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnTwo" layoutX="125.0" layoutY="121.0" mnemonicParsing="false" onAction="#calculate" prefHeight="63.0" prefWidth="30.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="47.0">
+               <image>
+                  <Image url="@two.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnFive" layoutX="124.0" layoutY="197.0" mnemonicParsing="false" onAction="#calculate" prefHeight="37.0" prefWidth="77.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="49.0">
+               <image>
+                  <Image url="@five.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnEight" layoutX="124.0" layoutY="264.0" mnemonicParsing="false" onAction="#calculate" prefHeight="43.0" prefWidth="47.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="51.0">
+               <image>
+                  <Image url="@eight.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnZero" layoutX="125.0" layoutY="329.0" mnemonicParsing="false" onAction="#calculate" prefHeight="55.0" prefWidth="69.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="47.0">
+               <image>
+                  <Image url="@zero.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnThree" layoutX="203.0" layoutY="120.0" mnemonicParsing="false" onAction="#calculate" prefHeight="64.0" prefWidth="53.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="60.0">
+               <image>
+                  <Image url="@three.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnSix" layoutX="203.0" layoutY="193.0" mnemonicParsing="false" onAction="#calculate" prefHeight="61.0" prefWidth="69.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="58.0">
+               <image>
+                  <Image url="@six.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnNine" layoutX="211.0" layoutY="264.0" mnemonicParsing="false" onAction="#calculate" prefHeight="54.0" prefWidth="69.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="57.0">
+               <image>
+                  <Image url="@nine.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnCalculate" layoutX="221.0" layoutY="345.0" mnemonicParsing="false" onAction="#calculate" text="Calculate" />
+      <Button fx:id="btnAdd" layoutX="309.0" layoutY="121.0" mnemonicParsing="false" onAction="#calculate" prefHeight="45.0" prefWidth="63.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="35.0">
+               <image>
+                  <Image url="@plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnSub" layoutX="296.0" layoutY="184.0" mnemonicParsing="false" onAction="#calculate" prefHeight="58.0" prefWidth="44.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="41.0">
+               <image>
+                  <Image url="@minus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnMultiply" layoutX="306.0" layoutY="264.0" mnemonicParsing="false" onAction="#calculate" prefHeight="25.0" prefWidth="22.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="37.0">
+               <image>
+                  <Image url="@times.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnDivide" layoutX="306.0" layoutY="332.0" mnemonicParsing="false" onAction="#calculate" prefHeight="43.0" prefWidth="31.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="45.0">
+               <image>
+                  <Image url="@divide.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="clearBtn" layoutX="57.0" layoutY="344.0" mnemonicParsing="false" onAction="#clear" text="clear" />
+      <Label fx:id="ans" layoutX="43.0" layoutY="93.0" onDragDetected="#calculate" prefHeight="17.0" prefWidth="395.0" text="answer " />
+   </children>
+</AnchorPane>
